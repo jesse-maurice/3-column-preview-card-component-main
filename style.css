@@ -1,0 +1,240 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.wrapper {
+  height: 60rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  margin: 0 32px;
+}
+
+.first-container {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2rem;
+  border-radius: 0.625rem 0 0 0.625rem;
+  width: 15rem;
+  height: 50%;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.second-container {
+  background-color: hsl(184, 100%, 22%);
+  width: 15rem;
+  height: 50%;
+  padding: 2rem;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.second-container p {
+  padding-right: 1rem;
+}
+
+.third-container {
+  background-color: hsl(179, 100%, 13%);
+  width: 15rem;
+  height: 50%;
+  padding: 2rem;
+  gap: 40px;
+  border-radius: 0 0.625rem 0.625rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.third-container p {
+  padding-right: 1rem;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.8;
+  padding-right: 2.5rem;
+}
+
+button {
+  display: inline-block;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  text-decoration: none;
+  border-radius: 32px;
+  padding: 13px 50px;
+  border: none;
+}
+
+.btn1 button {
+  color: hsl(31, 77%, 52%);
+  margin-top: 3.5rem;
+}
+
+.btn1 button:hover {
+  cursor: pointer;
+  border: 2px solid #fff;
+  background-color: hsl(31, 77%, 52%);
+  color: #fff;
+}
+
+.btn2 button {
+  color: hsl(184, 100%, 22%);
+  margin-top: 3.5rem;
+}
+
+.btn2 button:hover {
+  cursor: pointer;
+  border: 2px solid #fff;
+  background-color: hsl(184, 100%, 22%);
+  color: #fff;
+}
+
+.btn3 button {
+  color: hsl(179, 100%, 13%);
+  margin-top: 3.5rem;
+}
+
+.btn3 button:hover {
+  cursor: pointer;
+  border: 2px solid #fff;
+  background-color: hsl(179, 100%, 13%);
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 5rem;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20rem;
+    font-size: 13px;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .first-container h1 {
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+
+  .btn1 button {
+    margin-top: -2rem;
+    padding: 10px 30px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .second-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20rem;
+    font-size: 13px;
+  }
+
+  .second-container h1 {
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+
+  .btn2 button {
+    margin-top: -2rem;
+    padding: 10px 30px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .third-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20rem;
+    font-size: 13px;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .third-container h1 {
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+
+  .btn3 button {
+    margin-top: -2rem;
+    padding: 10px 30px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+  }
+}
